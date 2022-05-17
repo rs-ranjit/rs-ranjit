@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Wearings</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="icon" href="peark.jpg">
+
+</head>
+<body>
+    <header>
+       <!--the top black section-->
+        <div class="black-container">
+            <div class="black-content h4">
+                <h4>Free shipping Over Kathmandu Valley</h4>
+            </div>
+            <div class="black-content list">
+                <select name="city" id="city">
+                    <optgroup label="City">
+                    <option value="Kathmandu" selected>Kathmanudu</option>
+                    <option value="Lalitpur">Lalitpur</option>
+                    <option value="Bhaktapur">Bhaktapur</option>
+                </select>
+            </div>
+            <div class="black-content list">
+                <select name="Lang id="Lang">
+                    <optgroup label="language">
+                    <option value="English" >English</option>
+                    <option value="Nepali" selected>Nepali</option>
+                    <option value="Newari">Newari</option>
+                </select>
+            </div>
+            <div class="black-content list">
+                <select name="Acc" id="Acc">
+                    <optgroup label="My account">
+                    <option value="Login" selected>Login</option>
+                    <option value="Sign in">Sign In</option>
+                </select>
+            </div>
+        </div> 
+    </header><!--the top black section-->
+
+     <!--for the navigation section of the page-->
+     <main>
+        <div class="nav-container">
+            <div class="nav-content h1">
+                <h1>Peark <span>Wearing</span></h1>
+            </div>
+                <nav>
+                    <ul class="nav-content nave">
+                    <li><a href="new.html">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="theblogs.html">Blogs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            <div class="nav-content image">
+                <img class = "src" src="search.png" alt="">
+                <img src="shopping-cart.png" alt="">
+                <img src="user.png" alt="">
+            </div>
+        </div>  
+
+          <!--for the add picture-->
+        <div class="picture">
+            <img src="newjisoo.jpg" alt="">
+        </div>
+
+            <div class="text-main">
+                <h4>Spring / Summer Collection Of 2022</h4>
+                <h1>Get Up To 30% off<br>On New Arrivals</h1>
+                <button><a href="#">Shop Now</a></button>
+            </div>
+    </main>       
+    
+<footer>
+    <div class="helix"> 
+        <div id="slider">
+            <figure>
+                <img src="man.jpg" alt="">
+                <img src="lady.jpg" alt="">
+            </figure>
+        </div>     
+        <div id="slider">
+            <figure>
+                <img src="bags.jpg" alt="">
+                <img src="makeup2.jpg" alt="">
+            </figure>
+        </div>     
+        <div id="slider">
+            <figure>
+                <img src="jisoo.jpg" alt="">
+                <img src="yello.jpg" alt="">
+            </figure>
+        </div>     
+        <button class="button1">
+            FORMALS
+        </button>
+        <button class="button2">
+            ACCESSORIES
+        </button>
+        <button class="button3">
+            CASUALS
+        </button>
+    </div>
+
+    <div id="seller">
+        <h1>Trending This Week</h1>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-box">
+            <div id="carousel">
+                <img src="carosel1.jpg" alt="">
+                <img src="carosel2.jpg" alt="">
+                <img src="carosel3.jpg" alt="">
+                <img src="carosel4.jpg" alt="">
+            </div>
+            <div class="indicators">
+                <span id="btn1" class="active"></span>
+                <span id="btn2"></span>
+                <span id="btn3"></span>
+                <span id="btn4"></span>
+            </div>
+        </div>
+        <div class="carousel1-box">
+            <div id="carousel1">
+                <img src="carosel2.jpg" alt="">
+                <img src="carosel4.jpg" alt="">
+                <img src="carosel3.jpg" alt="">
+                <img src="carosel1.jpg" alt="">
+            </div>
+            <div class="indicators1">
+                <span id="btn11" class="active1"></span>
+                <span id="btn21"></span>
+                <span id="btn31"></span>
+                <span id="btn41"></span>
+            </div>
+        </div>
+    </div>
+    <div class="price-container">
+    <div class="the-price1">
+        <h3>
+            Blue suit
+           <h5>$98.00</h5><del>$120.00</del>
+        </h3>
+    </div>  
+    <div class="the-price2">
+        <h3>
+            yellow track suit
+            <h5>$58.00</h5><del>$70.00</del>
+        </h3>
+    </div>
+    </div>  
+<script>
+    var slide = document.getElementById("carousel");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+
+    btn1.onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+    }
+
+    btn2.onclick = function(){
+        slide.style.transform = "translateX(-100%)";
+        btn1.classList.remove("active");
+        btn2.classList.add("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+    }
+    btn3.onclick = function(){
+        slide.style.transform = "translateX(-200%)";
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn3.classList.add("active");	
+        btn4.classList.remove("active");
+    }
+    btn4.onclick = function(){
+        slide.style.transform = "translateX(-300%)";
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.add("active");	
+    }
+</script>
+<script>
+    var slide1 = document.getElementById("carousel1");
+    var btn11 = document.getElementById("btn11");
+    var btn21 = document.getElementById("btn21");
+    var btn31 = document.getElementById("btn31");
+    var btn41 = document.getElementById("btn41");
+
+    btn11.onclick = function(){
+        slide1.style.transform = "translateX(0px)";
+        btn11.classList.add("active1");
+        btn21.classList.remove("active1");
+        btn31.classList.remove("active1");
+        btn41.classList.remove("active1");
+    }
+
+    btn21.onclick = function(){
+        slide1.style.transform = "translateX(-100%)";
+        btn11.classList.remove("active1");
+        btn21.classList.add("active1");
+        btn31.classList.remove("active1");
+        btn41.classList.remove("active1");
+    }
+
+    btn31.onclick = function(){
+        slide1.style.transform = "translateX(-200%)";
+        btn11.classList.remove("active1");
+        btn21.classList.remove("active1");
+        btn31.classList.add("active1");	
+        btn41.classList.remove("active1");
+    }
+    btn41.onclick = function(){
+        slide1.style.transform = "translateX(-300%)";
+        btn11.classList.remove("active1");
+        btn21.classList.remove("active1");
+        btn31.classList.remove("active1");
+        btn41.classList.add("active1");	
+    }
+</script>
+    <div class="the-ending-container">
+         <div class="ending-content">
+            <nav>
+                <ul class="ul">
+                    <li><a href="theblog.html">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="ending-icons">
+                <img src="icon (1).png" alt="">
+                <img src="icon (2).png" alt="">
+                <img src="icon (3).png" alt="">
+            </div>
+        </div>   
+        <div class="ending-content-end">
+            <sup><img src="cp.png" alt=""></sup>2018 All Rights Reserverd. By <a href="new.html">Perk.</a>
+        </div>
+    </div>
+</footer>
+  
+    
+</body>
+</html>
